@@ -1,4 +1,4 @@
-package javaclass_191202;
+package javaClass_191202;
 
 public class Ex01_Variable {
 
