@@ -10,6 +10,7 @@ public class Ex03_23Times {
 		 */
 		Scanner scan = new Scanner(System.in);
 		int sum = 0;
+		int number;
 		System.out.print("숫자 입력 : ");
 		int num = scan.nextInt();
 		for (int i = 1; i <= num; i++) {
