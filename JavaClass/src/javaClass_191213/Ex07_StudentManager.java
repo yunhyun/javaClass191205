@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Ex07_StudentManager {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
 		boolean run = true;		
 		int[] scores = null;
@@ -46,7 +45,6 @@ public class Ex07_StudentManager {
 				for (int i = 0; i < scores.length; i++) {
 					for (int j = i + 1; j < scores.length; j++) {
 						if (scores[i] < scores[j]) {
-							// num[i]가 가지고 있는 값을 temp에 대입 
 							temp = scores[i];
 							scores[i] = scores[j];
 							scores[j] = temp;
@@ -57,11 +55,11 @@ public class Ex07_StudentManager {
 					System.out.println(scores[n]);
 				
 			} else if(selectNo==5) {
-				// while문 종료 
 				run = false;
 			}
 		}	
 		System.out.println("프로그램 종료");
+		scan.close();
 	}
 
 }
