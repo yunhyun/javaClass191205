@@ -33,6 +33,8 @@ public class Ex01_Car {
 		// 매개변수로 넘겨받은 값을 필드값으로 세팅
 		type = "하이브리드";
 	}
+	// Overriding
+	// Overloading
 	
 	// 매개변수가 있는 생성자 선언
 	// 매개변수 : color, speed
@@ -40,6 +42,33 @@ public class Ex01_Car {
 		this.color = color;
 		this.speed = speed;
 	}
+	
+	Ex01_Car(String color, String company){
+		this.color = color;
+		this.company = company;
+	}
+
+	@Override
+	public String toString() {
+		return "Ex01_Car [color=" + color + ", speed=" + speed + ", type=" + type + ", model=" + model + ", company="
+				+ company + "]";
+	}
+	
+	Ex01_Car(String color, int speed, String type, String model, String company){
+		this.color = color;
+		this.speed = speed;
+		this.type = type;
+		this.model = model;
+		this.company = company;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 //	Ex01_Car(String cl, int sp){
 //		color = cl;
