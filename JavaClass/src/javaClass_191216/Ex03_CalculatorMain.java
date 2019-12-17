@@ -42,6 +42,8 @@ public class Ex03_CalculatorMain {
 				System.out.print("숫자입력");
 				num2 = scan.nextInt();
 				cal.multiply(num1,num2);
+				int result = cal.multiply1(num1, num2);
+				System.out.println("곱셈결과(main) : "+result);
 				break;
 			case 4:
 				cal.divide(5,5);
