@@ -85,6 +85,11 @@ public class Ex04_NaverMember {
 		this.phone = phone;
 	}
 	
+	// 기본 생성자 선언
+	Ex04_NaverMember() {
+		
+	}
+	
 	// 모든 필드를 매개변수로하는 생성자 선언 후 
 	// main 클래스에서 신규 회원을 하나 등록해보세요 
 	
