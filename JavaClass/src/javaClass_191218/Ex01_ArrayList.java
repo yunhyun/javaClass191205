@@ -46,6 +46,7 @@ public class Ex01_ArrayList {
 		list.remove(1);
 		
 		list.remove("다다다다");
+		list.clear();
 		// for 이용하여 list에 담긴 데이터 전체 출력하기 
 		for(int i=0; i<list.size(); i++) {
 			System.out.println(list.get(i));
