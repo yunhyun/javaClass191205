@@ -37,8 +37,6 @@ public class Ex02_CellPhoneMain {
 		cp.receiveMessage("......");
 		
 		
-		
-		
 	}
 
 }
