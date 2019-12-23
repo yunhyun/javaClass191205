@@ -11,6 +11,7 @@ public class Student {
 	private int javaScore;
 	private int servletScore;
 	private int springScore;
+	
 	private Major major;
 		
 	public Student() {
@@ -99,11 +100,23 @@ public class Student {
 	public void servletMax(List<Student> studentList) {
 		int max=0;
 		for(int i=0; i<studentList.size();i++) {
-			if(max<studentList.get(i).getServletScore()) {
+			if(studentList.get(max).getServletScore()<studentList.get(i).getServletScore()) {
 				max = i;
 			}
 		}
-		System.out.println("Java 최고점수는 "+studentList.get(max).getName()+"의 "+studentList.get(max).getServletScore()+"입니다.");
+		System.out.println("Serlvet 최고점수는 "+studentList.get(max).getName()+"의 "
+					+studentList.get(max).getServletScore()+"입니다.");
+	}
+
+	public void springMax(List<Student> studentList) {
+		int max=0;
+		for(int i=0; i<studentList.size();i++) {
+			if(studentList.get(max).getSpringScore()<studentList.get(i).getSpringScore()) {
+				max = i;
+			}
+		}
+		System.out.println("Spring 최고점수는 "+studentList.get(max).getName()+"의 "
+					+studentList.get(max).getSpringScore()+"입니다.");
 	}
 
 	public Major getMajor() {
@@ -113,6 +126,15 @@ public class Student {
 	public void setMajor(Major major) {
 		this.major = major;
 	}
+	
+//	public Major1 getMajor() {
+//		return major;
+//	}
+//
+//	public void setMajor(Major1 major) {
+//		this.major = major;
+//	}
+
 		
 	
 	
