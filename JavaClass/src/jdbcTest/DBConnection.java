@@ -17,7 +17,7 @@ public class DBConnection {
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 		try {
 			// 오라클 DB의 드라이버 클래스를 프로그램에 적용 
-			// 정상적 적용을 위해선 ojdbc6 파일을 jre-lib-ext 폴더에 넣어야 함 
+			// 정상적 적용을 위해선 ojdbc6 파일을 jre폴더-lib-ext 폴더에 넣어야 함 
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			// DriverManager 클래스의 getConnection 메소드 호출하여 
 			// DB 접속. 접속을 위해 계정, 비번, 주소값을 매개변수로 넘김 
