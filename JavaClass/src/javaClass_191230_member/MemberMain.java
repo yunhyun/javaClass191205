@@ -3,7 +3,6 @@ package javaClass_191230_member;
 import java.sql.Connection;
 import java.util.*;
 
-import javaClass_191225_03.Student;
 
 public class MemberMain {
 
